@@ -11,3 +11,7 @@ h1, h2, h3, h4, h5 {
 .post-preview {
   border-bottom: 3px solid $primary-color;
 }
+
+a, a:visited {
+  color: darken($primary-color, 30%);
+}
