@@ -4,6 +4,14 @@
 
 $primary-color: #1c733a;
 
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+       -o-border-radius: $radius;
+          border-radius: $radius;
+}
+
 h1, h2, h3, h4, h5 {
   color: $primary-color;
 }
@@ -25,9 +33,13 @@ article {
     font-weight: bold;
     font-family: Verdana, Geneva, sans-serif;
     font-size: 0.8em;
+    padding: 4px;
+		border: 2px solid darken($primary-color, 10%);
+		@include border-radius(5px);
   }
 
   .body {
     p { line-height: 1.5em; }
   }
 }
+
