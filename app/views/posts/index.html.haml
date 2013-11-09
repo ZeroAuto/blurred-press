@@ -1,6 +1,8 @@
+= render 'top_bar'
+
 %h1 My blog
 
-= link_to 'New Post', new_post_path
+.button= link_to 'New Post', new_post_path
 
 - @posts.each do |post|
   .post-preview
